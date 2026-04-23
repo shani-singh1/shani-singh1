@@ -7,6 +7,7 @@ Founder-turned-engineer. I love building Ai agents and systems that are challeng
 ## About
 
 I build end-to-end AI systems - from raw data ingestion to deployed inference. Previously co-founded Accenox (B2B software, $30K+ revenue, 8 months) and built Propab AI (autonomous research agent: 20K+ papers indexed, 200-tool agent, 15x ingestion throughput via GPU parallelism). Currently finishing my CS degree while sharpening AI engineering skills.
+
 ---
 ## Stack
 
