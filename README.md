@@ -1,5 +1,3 @@
-# Shani Singh
-
 I build autonomous AI systems end-to-end. Right now all-in on [Propab](https://propabai.com).
 
 ---
