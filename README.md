@@ -1,88 +1,43 @@
 # Shani Singh
 
-Founder-turned-engineer. I love building Ai agents and systems that are challenging.
+I build autonomous AI systems end-to-end. Right now all-in on [Propab](https://propabai.com).
 
 ---
 
-## About
+## Propab
 
-I build end-to-end AI systems - from raw data ingestion to deployed inference. Previously co-founded Accenox (B2B software, $30K+ revenue, 8 months) and built Propab AI (autonomous research agent: 20K+ papers indexed, 200-tool agent, 15x ingestion throughput via GPU parallelism). Currently finishing my CS degree while sharpening AI engineering skills.
+An autonomous scientific research system. The goal is to compress humanity's discovery timeline: research that runs continuously, at machine scale, instead of in human-paced cycles.
+
+I've been building this for a year now, including 4-6x full rebuild after internal audit showed me the architecture was wrong. under the hood:)
+
+- **Campaign orchestration.** A persistent loop engine. Orchestrator and subagents are the same agent class at different hierarchy levels, native tool calls, no hardcoded intent parsing.
+- **Hypothesis trees, not flat search.** Every synthesis output anchors to a completed parent node, so the search space converges instead of sprawling.
+- **Evidence binding.** Every claim traces to a content-addressed artifact. Fabricated citations get caught at write time, not review time.
+- **Literature retrieval at scale.** Hybrid BM25 + dense retrieval over open scholarly corpora (OpenAlex, Semantic Scholar), running on self-hosted index infrastructure because managed vector DBs don't survive contact with this scale.
+- **Sandboxed execution.** Hypotheses get verified by actually running code, not by asking an LLM if they sound right.
+
+Open-sourcing components as they stabilize.
 
 ---
+
 ## Stack
 
-| Layer | Tools |
-|---|---|
-| **Languages** | Python, TypeScript, JavaScript |
-| **AI & ML** | LLM orchestration, RAG, multi-agent systems, vector embeddings, CNN, LSTM, fine-tuning, transformers |
-| **Databases** | PostgreSQL, pgvector, Supabase, Redis, MongoDB |
-| **Backend** | FastAPI, Node.js, REST API design, distributed systems, microservices, message queues, system design |
-| **Infra & DevOps** | Docker, Kubernetes, GCP (Cloud Run, GKE), CI/CD, Linux, Git |
-| **Frontend** | React, Next.js |
-
+- **Languages:** Python, TypeScript
+- **AI systems:** multi-agent orchestration, RAG / hybrid retrieval, embeddings, sandboxed tool execution
+- **Data:** PostgreSQL, pgvector, Redis
+- **Backend & infra:** FastAPI, Node.js, Docker, Kubernetes, GCP, self-hosted dedicated servers
+- **Frontend:** Next.js, React
 
 ---
 
-## Projects
+## Before this
 
-### [Propab AI](https://propabai.com) · [[Demo]](https://drive.google.com/file/d/1yeqzbm6w2B6c8bVFUkic6MsI6M0JDqQQ/view?usp=sharing) · *paused*
+Co-founded **[Accenox](https://www.accenox.com/in)**, a B2B software company for global clients. Team of 8, 30+ production systems shipped. Paused it to go full-time on Propab.
 
-Autonomous scientific research agent built from scratch.
-
-- Ingested, chunked, and embedded **20,000+ arXiv papers** into a pgvector (Supabase) vector store
-- **15x throughput improvement** on corpus indexing via GPU-parallelised batch embedding
-- **200-tool computational agent** with Docker-sandboxed Python execution — autonomously runs experiments, verifies hypotheses, emits structured outputs
-- Hierarchical **scout + solver multi-agent architecture** deployed on GCP/Kubernetes
-- Production RAG pipeline with cross-encoder re-ranking and context compression; <100ms retrieval via pgvector ANN indexing
-
-`Python` `LLM orchestration` `RAG` `pgvector` `Supabase` `multi-agent` `Docker` `Kubernetes` `GCP`
-
----
-
-### [Sentient — Road Infrastructure Risk Ranking](https://github.com/shani-singh1/sentient) · *BITS Pilani Capstone*
-
-Deep learning pipeline for spatiotemporal infrastructure risk scoring.
-
-- **CNN + LSTM** architecture on Sentinel-1 SAR satellite imagery and environmental stress signals
-- **Self-supervised + weakly supervised** training regime to handle real-world label scarcity — no fully annotated ground truth required
-- End-to-end system: satellite data ingestion → preprocessing → spatiotemporal feature encoding → risk scoring → FastAPI inference backend → React frontend with PostGIS schema and containerised deployment
-
-`Python` `PyTorch` `CNN` `LSTM` `satellite imagery` `FastAPI` `PostGIS` `Docker Compose`
-
----
-
-### [Accenox](https://www.accenox.com/in) · *paused*
-
-B2B software company building production systems for global clients.
-
-- **10+ production-grade systems** shipped across fintech, logistics, and e-commerce verticals
-- **$30K+ revenue within 8 months**, serving clients across the US and Singapore
-- Recruited and directed a cross-functional team of 8 across engineering, design, and delivery
-- Full ownership: system architecture → sprint execution → client handoff
-
-`Node.js` `React` `Next.js` `PostgreSQL` `Redis` `TypeScript`
-
----
-
-
-## By the numbers
-
-| | |
-|---|---|
-| 20,000+ | arXiv papers indexed and embedded |
-| 15x | throughput gain on corpus ingestion (GPU parallelism) |
-| 200 | tools built into the Propab computational agent |
-| 10+ | production systems shipped at Accenox |
-| <100ms | RAG retrieval latency via pgvector ANN indexing |
+ps: I also contribute to open source repos (if you're maintaining one, ping me!)
 
 ---
 
 ## Find me
 
-- X: [@shani_singh1](https://x.com/shani_singh1)
-- LinkedIn: [shani-singh1](https://www.linkedin.com/in/shani-singh1/)
-- Propab: [propabai.com](https://propabai.com)
-
----
-
-*Most production code lives on private company repos (client work under NDA, company GitHub orgs). Public work: Sentient (above). Propab components being open-sourced progressively.*
+X: [@iykshani](https://x.com/iykshani) · LinkedIn: [shani-singh1](https://www.linkedin.com/in/shani-singh1/) · [propabai.com](https://propabai.com)
