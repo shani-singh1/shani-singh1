@@ -18,7 +18,7 @@ Open-sourcing components as they stabilize.
 
 ---
 
-## Stack
+## Stack (but not limited to, lol)
 
 - **Languages:** Python, TypeScript
 - **AI systems:** multi-agent orchestration, RAG / hybrid retrieval, embeddings, sandboxed tool execution
