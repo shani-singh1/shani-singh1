@@ -14,15 +14,15 @@ I've been building this for a year now, including 4-6x full rebuild after intern
 - **Literature retrieval at scale.** Hybrid BM25 + dense retrieval over open scholarly corpora (OpenAlex, Semantic Scholar), running on self-hosted index infrastructure because managed vector DBs don't survive contact with this scale.
 - **Sandboxed execution.** Hypotheses get verified by actually running code, not by asking an LLM if they sound right.
 
-Open-sourcing components as they stabilize.
+NOTE: propab open source repo is stale and not updated from months when i switched to different architecture which is live at propabai.com as of now, our first product is pab which can take any research objective and can work for days and test thousands of ideas and experiments ( its happening right now not a future claim, go try it out!!).
 
 ---
 
 ## Stack (but not limited to, lol)
 
 - **Languages:** Python, TypeScript
-- **AI systems:** multi-agent orchestration, RAG / hybrid retrieval, embeddings, sandboxed tool execution
-- **Data:** PostgreSQL, pgvector, Redis
+- **AI systems:** creating/evaluating benchmarks + verifiers, multi-agent orchestration, RAG / hybrid retrieval, embeddings,  secure sandboxed execution, managed agents
+- **Data:** PostgreSQL, pgvector, Redis, MiniIO, supabase, MongoDB, S3
 - **Backend & infra:** FastAPI, Node.js, Docker, Kubernetes, GCP, self-hosted dedicated servers
 - **Frontend:** Next.js, React
 
